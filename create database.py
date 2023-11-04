@@ -3,7 +3,7 @@ from tkinter import *
 
 database = sqlite3.connect("database.db") #создаем базу данных
 cursor = database.cursor()#создаем курсор
-cursor.execute("CREATE TABLE employer(id, фамилия имя отчество , номер телефона, электронная почта, заработная плата)")#создаем поля
+cursor.execute("CREATE TABLE employer(id, фамилия_имя_отчество , номер_телефона, электронная_почта, заработная_плата)")#создаем поля
 
 window = Tk() #создаем окно
 window.title("Create database") #именуем окно
